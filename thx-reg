@@ -1,0 +1,11 @@
+<?php
+
+$result = mysqli_query($con, "SELECT * FROM users WHERE email = '$_GET[user]'");
+
+while ($row=mysqli_fetch_assoc($result)){
+	$uid = $row['uid'];
+	$nev = $row['nev'];
+	$email = $row['email'];
+	$tel = $row['tel'];
+}
+?>
